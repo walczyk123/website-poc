@@ -14,12 +14,12 @@ const SpecializationSection = () => {
 
   return (
     <section id="about" className="py-16 px-6 max-w-6xl mx-auto scroll-mt-20">
-      <h2 className="text-3xl font-semibold mb-6 text-teal-700 border-b-2 border-teal-300 pb-2">
+      <h2 className="text-3xl font-semibold mb-6 text-teal-700 border-b-2 border-teal-300 pb-2 mx-2">
         Obszary specjalizacji
       </h2>
 
       {/* Mobile */}
-      <ul className="list-none ml-0 space-y-3 text-lg text-gray-700 mb-12 md:hidden">
+      <ul className="list-none ml-0 space-y-3 text-lg text-gray-700 mb-12 md:hidden mx-2">
         {items.map((item, i) => (
           <li key={i}>🪷 {item}</li>
         ))}

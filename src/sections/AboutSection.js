@@ -3,7 +3,7 @@ import portrait from "../images/portrait.webp";
 
 const AboutSection = () => (
   <section id="about" className="py-16 px-6 max-w-6xl mx-auto scroll-mt-20">
-    <h2 className="text-3xl font-semibold mb-6 text-teal-700 border-b-2 border-teal-300 pb-2">
+    <h2 className="text-3xl font-semibold mb-6 text-teal-700 border-b-2 border-teal-300 pb-2 mx-2">
       O mnie
     </h2>
 

@@ -13,7 +13,7 @@ const StickyHeader = () => {
 
   const handleScroll = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    setIsOpen(false); // zamyka menu po kliknięciu
+    setIsOpen(false);
   };
 
   return (
@@ -47,7 +47,6 @@ const StickyHeader = () => {
             className="text-white focus:outline-none"
             aria-label="Otwórz menu"
           >
-            {/* Ikona hamburgera */}
             <svg
               className="w-6 h-6"
               fill="none"
@@ -69,7 +68,6 @@ const StickyHeader = () => {
       {/* Mobile dropdown fullscreen */}
       {isOpen && (
         <div className="md:hidden fixed inset-0 bg-teal-600 z-50 flex flex-col items-center justify-center space-y-6">
-          {/* Zamknięcie */}
           <button
             onClick={() => setIsOpen(false)}
             className="absolute top-6 right-6 text-white text-3xl focus:outline-none"

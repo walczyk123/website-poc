@@ -7,7 +7,6 @@ import HowDoIWorkSection from "../sections/HowDoIWorkSection";
 import WhenSection from "../sections/WhenSection";
 import MethodsSection from "../sections/MethodsSection";
 import InfoSection from "../sections/InfoSection";
-import ContactSection from "../sections/ContactSection";
 import FooterSection from "../sections/FooterSection";
 import SpecializationSection from "../sections/SpecializationSection";
 
@@ -24,15 +23,14 @@ const IndexPage = () => {
   return (
     <>
       <StickyHeader />
-      <main className="font-sans text-gray-800 bg-gray-50">
+      <main className="font-sans text-gray-700 bg-pink-50">
         <HeroSection />
         <AboutSection />
         <HowDoIWorkSection />
         <SpecializationSection />
-        <WhenSection />
         <MethodsSection />
+        <WhenSection />
         <InfoSection />
-        <ContactSection />
         <FooterSection />
       </main>
     </>
