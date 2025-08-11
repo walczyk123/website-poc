@@ -3,7 +3,7 @@ import lotusFlower from "../images/lotus-flower.webp";
 
 
 const HowDoIWorkSection = () => (
-  <section id="about" className="pb-6 pt-6 px-6 max-w-6xl mx-2 md:mx-auto scroll-mt-20 bg-white shadow-md rounded-lg">
+  <section id="howDoIwork" className="pb-6 pt-6 px-6 max-w-6xl mx-2 md:mx-auto scroll-mt-20 bg-white shadow-md rounded-lg">
     <h2 className="text-3xl font-semibold mb-6 text-teal-700 border-b-2 border-teal-300 pb-2">
       Jak pracuję
     </h2>

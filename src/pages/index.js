@@ -10,15 +10,6 @@ import InfoSection from "../sections/InfoSection";
 import FooterSection from "../sections/FooterSection";
 import SpecializationSection from "../sections/SpecializationSection";
 
-
-const sections = [
-  { id: "about", label: "O mnie" },
-  { id: "when", label: "Kiedy na psychoterapię" },
-  { id: "methods", label: "Metody pracy" },
-  { id: "practical", label: "Informacje praktyczne" },
-  { id: "contact", label: "Kontakt" },
-];
-
 const IndexPage = () => {
   return (
     <>

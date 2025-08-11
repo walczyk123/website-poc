@@ -13,7 +13,7 @@ const SpecializationSection = () => {
   const circleItems = items.slice(0, 5);
 
   return (
-    <section id="about" className="py-16 px-6 max-w-6xl mx-auto scroll-mt-20">
+    <section id="specialistaions" className="py-16 px-6 max-w-6xl mx-auto scroll-mt-20">
       <h2 className="text-3xl font-semibold mb-6 text-teal-700 border-b-2 border-teal-300 pb-2 mx-2">
         Obszary specjalizacji
       </h2>

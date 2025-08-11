@@ -2,9 +2,11 @@ import React, { useState } from "react";
 
 const sections = [
   { id: "about", label: "O mnie" },
-  { id: "when", label: "Kiedy na psychoterapię" },
+  { id: "howDoIwork", label: "Jak pracuję" },
+  { id: "specialistaions", label: "Specializacje" },
   { id: "methods", label: "Metody pracy" },
-  { id: "practical", label: "Informacje praktyczne" },
+  { id: "when", label: "Dla kogo"},
+  { id: "practical", label: "Informacje"},
   { id: "contact", label: "Kontakt" },
 ];
 
@@ -18,9 +20,9 @@ const StickyHeader = () => {
 
   return (
     <header className="sticky top-0 bg-gradient-to-r from-teal-600 to-teal-700 shadow-lg z-50 border-b border-teal-800">
-      <nav className="max-w-6xl mx-auto flex justify-between items-center py-5 px-8">
+      <nav className="max-w-6xl mx-auto flex justify-between items-center py-5 px-8 md:px-2 lg:px-8">
         <h1
-          className="text-white text-2xl font-semibold cursor-pointer select-none hover:text-teal-300 transition-colors duration-300 mb-0"
+          className="text-white text-xl lg:text-2xl font-semibold cursor-pointer select-none hover:text-teal-300 transition-colors duration-300 mb-0"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           Danuta Koziełło-Doherty
@@ -32,8 +34,7 @@ const StickyHeader = () => {
             <li key={id} className="mb-0">
               <button
                 onClick={() => handleScroll(id)}
-                className="bg-white text-teal px-4 py-2 rounded-md shadow-sm hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-300"
-              >
+                className={`text-white font-medium px-1 py-2 hover:text-teal-50 focus:outline-none text-shadow-white transition-colors duration-300 ${id === "practical" ? "md:hidden lg:inline" : ""}`}              >
                 {label}
               </button>
             </li>
